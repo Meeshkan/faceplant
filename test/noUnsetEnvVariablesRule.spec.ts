@@ -94,7 +94,7 @@ describe("no-unset-env-variables test with fake env", () => {
             rule: {
                 name: rule,
                 options: {
-                    envFilePaths: [".env0"],
+                    envFilePaths: ["./.env0"],
                 },
             },
             src,
@@ -111,7 +111,7 @@ describe("no-unset-env-variables test with fake env", () => {
             rule: {
                 name: rule,
                 options: {
-                    envFilePaths: [".env0"],
+                    envFilePaths: ["./.env0"],
                 },
             },
             src,
@@ -128,14 +128,14 @@ describe("no-unset-env-variables test with fake env", () => {
             rule: {
                 name: rule,
                 options: {
-                    envFilePaths: [".env0"],
+                    envFilePaths: ["./.env0"],
                 },
             },
             src,
         });
         expect(result.errorCount).toBe(2);
         const failure = result.failures[0];
-        expect(failure.getFailure()).toBe(FAKE_ENV_FAILURE("TOTALLY", ".env0"));
+        expect(failure.getFailure()).toBe(FAKE_ENV_FAILURE("TOTALLY", "./.env0"));
     });
     it(`has two errors`, () => {
         const src = `
@@ -147,14 +147,14 @@ describe("no-unset-env-variables test with fake env", () => {
             rule: {
                 name: rule,
                 options: {
-                    envFilePaths: [".env0", ".env1"],
+                    envFilePaths: ["./.env0", "./.env1"],
                 },
             },
             src,
         });
         expect(result.errorCount).toBe(2);
         const failure = result.failures[0];
-        expect(failure.getFailure()).toBe(FAKE_ENV_FAILURE("TOTALLY", ".env0 .env1"));
+        expect(failure.getFailure()).toBe(FAKE_ENV_FAILURE("TOTALLY", "./.env0 ./.env1"));
     });
     it(`has an incorrect env file, which results in an additional error`, () => {
         const src = `
@@ -211,7 +211,7 @@ describe("no-unset-env-variables should be defined", () => {
             rule: {
                 name: rule,
                 options: {
-                    envFilePaths: [".env0"],
+                    envFilePaths: ["./.env0"],
                     shouldBeDefined: ["FOO", "BAR" /* foo and bar not defined because we are not looking at real env*/],
                 },
             },
@@ -230,7 +230,7 @@ describe("no-unset-env-variables should be defined", () => {
             rule: {
                 name: rule,
                 options: {
-                    envFilePaths: [".env0"],
+                    envFilePaths: ["./.env0"],
                     shouldBeDefined: ["FOO", "BAR" /* bar not defined */],
                     useRealEnv: true,
                 },

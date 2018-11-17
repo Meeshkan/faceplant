@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Meeshkan/faceplant.svg?branch=master)](https://travis-ci.org/freeCodeCamp/how-to-contribute-to-open-source)
+
 # faceplant
 This repository contains various scripts that help prevent deploying bad code to production using TSLint.
 

@@ -1,6 +1,6 @@
 {
   "name": "faceplant",
-  "version": "0.0.0-development",
+  "version": "0.0.4",
   "description": "Failure as a service.",
   "main": "./index.js",
   "scripts": {

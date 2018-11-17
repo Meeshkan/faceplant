@@ -1,6 +1,4 @@
 # faceplant
-Failure as a service.
-
 This repository contains various scripts that help prevent deploying bad code to production using TSLint.
 
 ## Install

@@ -1,0 +1,55 @@
+{
+  "name": "faceplant",
+  "version": "0.0.0",
+  "description": "Failure as a service.",
+  "main": "dist/faceplant.js",
+  "scripts": {
+    "prepublish": "tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Meeshkan/faceplant.git"
+  },
+  "keywords": [
+    "epic",
+    "fail",
+    "faceplant",
+    "incompetence",
+    "sorry"
+  ],
+  "author": "Mike Solomon",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Meeshkan/faceplant/issues"
+  },
+  "homepage": "https://github.com/Meeshkan/faceplant#readme",
+  "devDependencies": {
+    "@types/jest": "^23.3.9",
+    "@types/node": "^10.12.9",
+    "jest": "^23.6.0",
+    "randomstring": "^1.1.5",
+    "ts-jest": "^23.10.4",
+    "typescript": "^3.1.6"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "testMatch": [
+      "**/**/*.spec.(ts|tsx)"
+    ],
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "debug": "^4.1.0",
+    "envfile": "^2.3.0",
+    "tslint": "^5.11.0"
+  }
+}

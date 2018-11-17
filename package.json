@@ -1,10 +1,10 @@
 {
   "name": "faceplant",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Failure as a service.",
   "main": "./index.js",
   "scripts": {
-    "prepublish": "tsc",
+    "prepare": "tsc",
     "test": "jest"
   },
   "repository": {

@@ -64,7 +64,7 @@ export default class Walk extends Lint.RuleWalker {
                         this.addFailureAt(
                             node.getStart(),
                             node.getEnd() - node.getStart(),
-                            FAKE_ENV_FAILURE(name, options[0].envFilePaths.join(" ") ));
+                            FAKE_ENV_FAILURE(name, options[0].envFilePaths.join(" ")));
                 }
         }
         super.visitPropertyAccessExpression(node);

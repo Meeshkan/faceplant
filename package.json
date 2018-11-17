@@ -2,7 +2,7 @@
   "name": "faceplant",
   "version": "0.0.0",
   "description": "Failure as a service.",
-  "main": "dist/faceplant.js",
+  "main": "./index.js",
   "scripts": {
     "prepublish": "tsc",
     "test": "jest"

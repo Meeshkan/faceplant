@@ -3,6 +3,28 @@ Failure as a service.
 
 This repository contains various scripts that help prevent deploying bad code to production using TSLint.
 
+## Install
+
+Install the package using NPM:
+
+    yarn add --dev faceplant
+
+Update your `tslint.json` file to extend this package:
+
+```json
+{
+  "extends": [
+    "faceplant"
+  ],
+  "rules": {
+    "no-unset-env-variables": {
+        "options": { "useRealEnv": true },
+        "severity": "error"
+    },
+  }
+}
+```
+
 ## no-unset-env-variables
 
 Makes sure that environmental variables are set as they should be.

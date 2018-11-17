@@ -1,6 +1,6 @@
 {
   "name": "faceplant",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Failure as a service.",
   "main": "./index.js",
   "scripts": {
@@ -18,7 +18,8 @@
     "fail",
     "faceplant",
     "incompetence",
-    "sorry"
+    "sorry",
+    "tslint"
   ],
   "author": "Mike Solomon",
   "license": "Apache-2.0",
